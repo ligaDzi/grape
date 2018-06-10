@@ -151,7 +151,7 @@ angular.module("grapeApp", [])
         //Функция инициализации стартовой страницы
         function initStartPage() { 
             
-            $scope.url = "";
+            $scope.url = "main.html";
             $timeout(function(){
                 Model.actSliders();
             }, 10);            
@@ -161,7 +161,7 @@ angular.module("grapeApp", [])
             $scope.abc = model.abc;
         }
         $scope.startPage = function(){
-            Model.showStartPage();
+            // Model.showStartPage();
             initStartPage();
 
             /* обновить страницу (деактивировать меню, поднять страницу вверх) */
@@ -172,7 +172,7 @@ angular.module("grapeApp", [])
 
         /*Обработчик нажатия пункта меню тэга*/
         $scope.tagClick = function(name, id){  
-            Model.hideStartPage();
+            // Model.hideStartPage();
             $scope.url = "tag.html";
             getArticlesByTag(name, id);
 
@@ -181,7 +181,7 @@ angular.module("grapeApp", [])
         }
         /*Обработчик нажатия пункта меню буквы*/
         $scope.letterClick = function(letter){ 
-            Model.hideStartPage();
+            // Model.hideStartPage();
             $scope.url = "letter.html";
             get_ArticlesByLetter(letter);
 
@@ -190,7 +190,7 @@ angular.module("grapeApp", [])
         }
         /*Обработчик нажатия на статью*/
         $scope.articleClick = function(name, id){ 
-            Model.hideStartPage();
+            // Model.hideStartPage();
             $scope.url = "article.html";
 
             //здесь нужна небольшая задержка, чтобы успела загрузиться html-страница,
