@@ -1,0 +1,21 @@
+<div class="container">
+        <div class="tag">
+            <div class="tag-body">
+                <div class="tag-body__name tag-name">      
+                    <div class="tag-name__img">
+                        <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616718/grape/letter_icon/{{letterAct}}.png" alt="{{letterAct}}">
+                    </div>
+                </div>
+                <div class="tag-body__articles">
+                    <ul class="tag-articles">
+                        <li class="tag-articles__item tag-item" ng-repeat="article in articlesByTag">
+                            <a href="#" class="tag-item__link tag-link" ng-click="articleClick(article.name, article.id)">
+                                <h4 class="tag-link__name">{{article.name}}</h4>
+                                <p class="tag-link__text">{{article.description}}</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
