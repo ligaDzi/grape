@@ -145,7 +145,7 @@ angular.module("grapeApp", [])
             //Запрос на сервер за тэгами для меню
             $timeout(function(){
                 getTags();
-            }, 15);
+            }, 100);
             
             $scope.abc = model.abc;
         }
@@ -185,7 +185,7 @@ angular.module("grapeApp", [])
             //иначе код вставляющий информацию не найдет элементы в которые надо эту информацию вставить.
             $timeout(function(){
                 getArticlesByID(name, id);
-            }, 15);
+            }, 100);
 
             /* обновить страницу (деактивировать меню, поднять страницу вверх) */
             updatePage(); 
