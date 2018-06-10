@@ -192,8 +192,7 @@ angular.module("grapeApp", [])
         $scope.find = function(){
             let text = Model.find();
             
-            if(text !== ""){  
-                Model.hideStartPage();                               
+            if(text !== ""){                                 
                 $scope.url = "tag.html";
                 $scope.tagAct = text + ":";
                 findText(text);                              
