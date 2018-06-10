@@ -53,14 +53,14 @@
                     <div class="terms-body">
                        <h2 class="terms-body__tittle tittle-section">
                            <span><img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616096/grape/icon/six_gran.png" alt="six face"></span>
-                           <a href="#" ng-click="tagClick(termin.name, termin.id)">{{termin.name}}</a>
+                           <a href="#" ng-cloak ng-click="tagClick(termin.name, termin.id)">{{termin.name}}</a>
                            <span><img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616096/grape/icon/six_gran.png" alt="six face"></span>
                        </h2>
                        <ul class="terms-body__items terms-items">                
                            <li class="terms-items__fun terms-fun">
                                <a href="#" ng-click="articleClick(termStart[0].name, termStart[0].id)">
                                    <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616718/grape/letter_icon/А.png" alt="grape">
-                                   <h3 class="terms-fun__tittle">{{termStart[0].name}}</h3>
+                                   <h3  ng-cloak class="terms-fun__tittle">{{termStart[0].name}}</h3>
                                    <div class="terms-fun__text">
                                        <p>
                                            (лат. absorptio) поглощение веще­ства из газовой смеси жидкостью во всем объеме поглотителя. А. лежит в основе ряда технологич. приемов винодельч. произ-ва. 
@@ -74,7 +74,7 @@
                            <li class="terms-items__fun terms-fun">
                                <a href="#" ng-click="articleClick(termStart[1].name, termStart[1].id)">
                                    <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616718/grape/letter_icon/О.png" alt="">
-                                   <h3 class="terms-fun__tittle">{{termStart[1].name}}</h3>
+                                   <h3  ng-cloak class="terms-fun__tittle">{{termStart[1].name}}</h3>
                                    <div class="terms-fun__text">
                                            <p>
                                            винограда (от греч. homos — оди­ наковый и onyma — имя), разные сорта в-да, имеющие одно и то же название. 
@@ -88,7 +88,7 @@
                            <li class="terms-items__fun terms-fun">
                               <a href="#" ng-click="articleClick(termStart[2].name, termStart[2].id)">
                                    <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616718/grape/letter_icon/П.png" alt="">
-                                   <h3 class="terms-fun__tittle">{{termStart[2].name}}</h3>
+                                   <h3  ng-cloak class="terms-fun__tittle">{{termStart[2].name}}</h3>
                                    <div class="terms-fun__text">
                                        <p>
                                            привиты х черенков, са­женцев, технологич. прием, состоящий в частичном их покрытии тонкой пленкой парафина (антитран-спиранта) с целью защиты от подсыхания. 
@@ -110,7 +110,7 @@
                     <div class="sorts-body">
                         <h2 class="sorts-body__tittle tittle-section">
                             <span><img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616096/grape/icon/six_gran.png" alt="six face"></span>
-                            <a href="#" ng-click="tagClick(grades.name, grades.id)">{{grades.name}}</a>
+                            <a  ng-cloak href="#" ng-click="tagClick(grades.name, grades.id)">{{grades.name}}</a>
                             <span><img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616096/grape/icon/six_gran.png" alt="six face"></span>
                         </h2>
                         <div class="sorts-body__items sorts-items">
@@ -119,7 +119,7 @@
                                     <div class="sorts-link__img">
                                         <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528617338/grape/sorts/flora1.jpg" alt="">
                                     </div>                        
-                                    <h3 class="sorts-link__tittle">{{sortStart[0].name}}</h3>
+                                    <h3  ng-cloak class="sorts-link__tittle">{{sortStart[0].name}}</h3>
                                     <p class="sorts-link__desc">СВЕРХРАННИЙ</p>
                                 </a>
                             </section>
@@ -128,7 +128,7 @@
                                     <div class="sorts-link__img">
                                         <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528617338/grape/sorts/preobrgenie3.jpg" alt="">                            
                                     </div>
-                                    <h3 class="sorts-link__tittle">{{sortStart[1].name}}</h3>
+                                    <h3  ng-cloak class="sorts-link__tittle">{{sortStart[1].name}}</h3>
                                     <p class="sorts-link__desc">СВЕРХРАННИЙ</p>
                                 </a>
                             </section>
@@ -137,7 +137,7 @@
                                     <div class="sorts-link__img">                                
                                         <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528617338/grape/sorts/slavyta1.JPG" alt="">
                                     </div>
-                                    <h3 class="sorts-link__tittle">{{sortStart[2].name}}</h3>
+                                    <h3  ng-cloak class="sorts-link__tittle">{{sortStart[2].name}}</h3>
                                     <p class="sorts-link__desc">РАННЕ-СРЕДНИЙ</p>
                                 </a>
                             </section>
@@ -157,7 +157,7 @@
                     <div class="person-body">
                         <h2 class="person-body__tittle tittle-section">
                             <span><img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616096/grape/icon/six_gran.png" alt="six face"></span>
-                            <a href="#" ng-click="tagClick(personality.name, personality.id)">{{personality.name}}</a>
+                            <a href="#" ng-cloak ng-click="tagClick(personality.name, personality.id)">{{personality.name}}</a>
                             <span><img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528616096/grape/icon/six_gran.png" alt="six face"></span>
                         </h2>
                         <div class="person-body__items person-items">
@@ -167,8 +167,8 @@
                                         <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528617148/grape/person/Авакян.jpg" alt="АВАКЯН Борис Петрович">
                                     </div>
                                     <div class="person-fun__sub person-sub">
-                                        <span class="person-sub__name">{{personStart[0].name}}</span>
-                                        <p>{{personStart[0].description}}</p>
+                                        <span ng-cloak class="person-sub__name">{{personStart[0].name}}</span>
+                                        <p ng-cloak>{{personStart[0].description}}</p>
                                     </div>
                                 </a>
                             </section>
@@ -178,8 +178,8 @@
                                         <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528617148/grape/person/Skurihin.jpg" alt="СКУРИХИН Игорь Михайлович">
                                     </div>
                                     <div class="person-fun__sub person-sub">
-                                        <span class="person-sub__name">{{personStart[1].name}}</span>
-                                        <p>{{personStart[1].description}}</p>
+                                        <span ng-cloak class="person-sub__name">{{personStart[1].name}}</span>
+                                        <p ng-cloak>{{personStart[1].description}}</p>
                                     </div>                        
                                 </a>
                             </section>
@@ -189,8 +189,8 @@
                                         <img src="http://res.cloudinary.com/alexcloudi/image/upload/v1528617148/grape/person/Александр_Негруль.jpg" alt="Александр Михайлович Негруль">
                                     </div>
                                     <div class="person-fun__sub person-sub">
-                                        <span class="person-sub__name">{{personStart[2].name}}</span>
-                                        <p>{{personStart[2].description}}</p>
+                                        <span ng-cloak class="person-sub__name">{{personStart[2].name}}</span>
+                                        <p ng-cloak>{{personStart[2].description}}</p>
                                     </div>                        
                                 </a>
                             </section>
@@ -230,8 +230,8 @@
                                 <div class="slideshow-right__item right-item">                        
                                     <div class="right-item__sub right-sub">
                                         <a href="#" ng-click="articleClick(articlStart[0].name, articlStart[0].id)">
-                                            <span class="right-sub__name">{{articlStart[0].name}}</span>
-                                            <p>
+                                            <span ng-cloak class="right-sub__name">{{articlStart[0].name}}</span>
+                                            <p ng-cloak>
                                                 {{articlStart[0].description}}   
                                             </p>
                                         </a>
@@ -240,8 +240,8 @@
                                 <div class="slideshow-right__item right-item"> 
                                     <div class="right-item__sub right-sub">
                                         <a href="#" ng-click="articleClick(articlStart[1].name, articlStart[1].id)">                                
-                                            <span class="right-sub__name">{{articlStart[1].name}}</span>
-                                            <p>
+                                            <span ng-cloak class="right-sub__name">{{articlStart[1].name}}</span>
+                                            <p ng-cloak>
                                                 {{articlStart[1].description}}   
                                             </p>
                                         </a>
@@ -250,8 +250,8 @@
                                 <div class="slideshow-right__item right-item">
                                     <div class="right-item__sub right-sub">
                                         <a href="#" ng-click="articleClick(articlStart[2].name, articlStart[2].id)">
-                                            <span class="right-sub__name">{{articlStart[2].name}}</span>
-                                            <p>
+                                            <span ng-cloak class="right-sub__name">{{articlStart[2].name}}</span>
+                                            <p ng-cloak>
                                                 {{articlStart[2].description}}    
                                             </p>
                                         </a>
