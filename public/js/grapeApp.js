@@ -118,17 +118,6 @@ class Model{
     static find(){
         return $('.header-form__input').val();        
     }
-
-    /*показать стартовую страницу (через ng-include не получиться сделать, 
-    т.к. необходимо чтобы стартовая разметка загрузилась первой, а потом к ней подключились библиотеки слайдеров)*/
-    static showStartPage(){
-        $('.start').show();        
-    }
-
-    //скрыть стартовую страницу
-    static hideStartPage(){
-        $('.start').hide();        
-    }
 }
 
 //класс для тэгов
@@ -162,7 +151,6 @@ angular.module("grapeApp", [])
             $scope.abc = model.abc;
         }
         $scope.startPage = function(){
-            // Model.showStartPage();
             initStartPage();
 
             /* обновить страницу (деактивировать меню, поднять страницу вверх) */
@@ -173,7 +161,6 @@ angular.module("grapeApp", [])
 
         /*Обработчик нажатия пункта меню тэга*/
         $scope.tagClick = function(name, id){  
-            // Model.hideStartPage();
             $scope.url = "tag.html";
             getArticlesByTag(name, id);
 
@@ -182,7 +169,6 @@ angular.module("grapeApp", [])
         }
         /*Обработчик нажатия пункта меню буквы*/
         $scope.letterClick = function(letter){ 
-            // Model.hideStartPage();
             $scope.url = "letter.html";
             get_ArticlesByLetter(letter);
 
@@ -191,7 +177,6 @@ angular.module("grapeApp", [])
         }
         /*Обработчик нажатия на статью*/
         $scope.articleClick = function(name, id){ 
-            // Model.hideStartPage();
             $scope.url = "article.html";
 
             //здесь нужна небольшая задержка, чтобы успела загрузиться html-страница,
