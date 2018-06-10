@@ -143,7 +143,10 @@ angular.module("grapeApp", [])
             $scope.url = "main.html";
             Model.actSliders();
             //Запрос на сервер за тэгами для меню
-            getTags();
+            $timeout(function(){
+                getTags();
+            }, 15);
+            
             $scope.abc = model.abc;
         }
         $scope.startPage = function(){
