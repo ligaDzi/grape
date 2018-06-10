@@ -141,9 +141,7 @@ angular.module("grapeApp", [])
         //Функция инициализации стартовой страницы
         function initStartPage() { 
             
-            $timeout(function(){
-                $scope.url = "main.html";
-            }, 1000);
+            $scope.url = "main.html";
             Model.actSliders();
             //Запрос на сервер за тэгами для меню            
             getTags();
@@ -186,7 +184,7 @@ angular.module("grapeApp", [])
             //иначе код вставляющий информацию не найдет элементы в которые надо эту информацию вставить.
             $timeout(function(){
                 getArticlesByID(name, id);
-            }, 100);
+            }, 10);
 
             /* обновить страницу (деактивировать меню, поднять страницу вверх) */
             updatePage(); 
