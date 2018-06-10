@@ -140,12 +140,13 @@ angular.module("grapeApp", [])
 
         //Функция инициализации стартовой страницы
         function initStartPage() { 
-            $scope.url = "main.html";
-            Model.actSliders();
-            //Запрос на сервер за тэгами для меню
+            
             $timeout(function(){
-                getTags();
+                $scope.url = "main.html";
             }, 100);
+            Model.actSliders();
+            //Запрос на сервер за тэгами для меню            
+            getTags();
             
             $scope.abc = model.abc;
         }
